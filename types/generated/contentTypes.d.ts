@@ -368,6 +368,7 @@ export interface ApiEventEvent extends Schema.CollectionType {
     singularName: 'event';
     pluralName: 'events';
     displayName: 'Event';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -375,7 +376,6 @@ export interface ApiEventEvent extends Schema.CollectionType {
   attributes: {
     date: Attribute.Date & Attribute.Required;
     time: Attribute.Time & Attribute.DefaultTo<'00:00'>;
-    location: Attribute.JSON & Attribute.CustomField<'plugin::map-field.map'>;
     description: Attribute.Text;
     sources: Attribute.Text;
     location_name: Attribute.String;

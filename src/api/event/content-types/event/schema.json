@@ -4,7 +4,8 @@
   "info": {
     "singularName": "event",
     "pluralName": "events",
-    "displayName": "Event"
+    "displayName": "Event",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,10 +20,6 @@
     "time": {
       "type": "time",
       "default": "00:00"
-    },
-    "location": {
-      "type": "customField",
-      "customField": "plugin::map-field.map"
     },
     "description": {
       "type": "text"
