@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date",
+      "required": true,
+      "unique": false
+    },
+    "time": {
+      "type": "time",
+      "default": "00:00"
+    },
+    "location": {
+      "type": "customField",
+      "customField": "plugin::map-field.map"
+    },
+    "description": {
+      "type": "text"
+    },
+    "sources": {
+      "type": "text"
+    },
+    "location_name": {
+      "type": "string"
+    }
+  }
+}
